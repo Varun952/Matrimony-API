@@ -1,6 +1,5 @@
 package com.appxbuild.matrimony.rest;
 
-import com.appxbuild.matrimony.enitiy.UserRelatives;
 import com.appxbuild.matrimony.entity.UserRelatives;
 import com.appxbuild.matrimony.service.UserRelativesService;
 import org.springframework.beans.factory.annotation.Autowired;

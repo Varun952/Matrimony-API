@@ -23,7 +23,7 @@ public class UserStatuses {
     private LocalDateTime created;
 
     @Column(name = "modified")
-    private LocalDate modified;
+    private LocalDateTime modified;
 
     @OneToMany(mappedBy = "userStatuses", fetch = FetchType.EAGER)
     private List<Users> users;
@@ -32,7 +32,7 @@ public class UserStatuses {
 
     }
 
-    public UserStatuses(String name, LocalDateTime created, LocalDate modified) {
+    public UserStatuses(String name, LocalDateTime created, LocalDateTime modified) {
         this.name = name;
         this.created = created;
         this.modified = modified;
@@ -62,11 +62,11 @@ public class UserStatuses {
         this.created = created;
     }
 
-    public LocalDate getModified() {
+    public LocalDateTime getModified() {
         return modified;
     }
 
-    public void setModified(LocalDate modified) {
+    public void setModified(LocalDateTime modified) {
         this.modified = modified;
     }
 
