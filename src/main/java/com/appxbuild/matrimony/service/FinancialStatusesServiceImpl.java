@@ -1,8 +1,7 @@
-package com.appxbuild.matrimony;
+package com.appxbuild.matrimony.service;
 
 import com.appxbuild.matrimony.dao.FinancialStatusesDAO;
 import com.appxbuild.matrimony.entity.FinancialStatuses;
-import com.appxbuild.matrimony.service.FinancialStatusesService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
