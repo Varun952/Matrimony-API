@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity
 @Table(name = "proposals")
@@ -310,6 +311,10 @@ public class Proposals {
     @JoinColumn(name = "user_id", referencedColumnName = "id")
     @JsonIgnoreProperties("proposals")
     private Users users;
+
+    @OneToMany(mappedBy ="proposalId" )
+    @JsonIgnoreProperties("userProfiles")
+    private List<ProposalsUserProfiles> proposalsUserProfiles;
 
 
     // default constructor

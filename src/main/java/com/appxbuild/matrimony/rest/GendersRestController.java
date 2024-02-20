@@ -16,7 +16,7 @@ public class GendersRestController {
     private GendersService gendersService;
 
     @Autowired
-    public GendersRestController(GendersService theGendersService){
+    public GendersRestController(GendersService theGendersService)  {
         gendersService = theGendersService;
     }
 
@@ -25,6 +25,5 @@ public class GendersRestController {
     public List<Genders> findAll(){
         return gendersService.findAll();
     }
-
 
 }

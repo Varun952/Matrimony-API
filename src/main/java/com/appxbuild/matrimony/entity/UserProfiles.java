@@ -309,6 +309,10 @@ public class UserProfiles {
     @JsonIgnoreProperties("userProfiles")
     private List<ThumbnailsUserProfiles> thumbnailsUserProfiles;
 
+    @OneToMany(mappedBy ="userProfileId" )
+    @JsonIgnoreProperties("userProfiles")
+    private List<ProposalsUserProfiles> proposalsUserProfiles;
+
     // define constructor
     public UserProfiles(){
 
